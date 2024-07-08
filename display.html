@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitted Information</title>
+    <link rel="stylesheet" href="thecss.css">
+</head>
+<body>
+    <header>
+        <h1>Submitted Information</h1>
+    </header>
+
+    <div id="submittedData" class="container">
+        <div id="displayData"></div>
+        <button onclick="goBack()">Go Back</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const formData = JSON.parse(sessionStorage.getItem('formData'));
+
+            if (formData) {
+                let displayData = '<ul>';
+                for (let key in formData) {
+                    displayData += `<li><strong>${key}:</strong> ${formData[key]}</li>`;
+                }
+                displayData += '</ul>';
+
+                document.getElementById('displayData').innerHTML = displayData;
+            } else {
+                document.getElementById('displayData').innerHTML = '<p>No data submitted.</p>';
+            }
+        });
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="thecss.css">
+</head>
+<body>
+    <header>   
+        <div class="screenimage"></div>
+          
+
+        <nav class="menubar">
+            <ul>
+                <li><img src="pu.png" alt="PU Logo" height="100"></li>
+                <li class="active"><a href="Index.html">HOME</a></li>           
+                <li><a href="formpage.html">APPLY ONLINE</a></li>
+                <li><a href="#">ABOUT</a>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                </li>
+                <li><a href="#">ADMISSION</a></li>
+                <li><a href="#">STUDY</a></li>
+                <li><a href="#">POSTGRADUATE</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">DONATE</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+    <br>
+    
+    
+
+    
+
+
+<div class="ttable">
+    <div class="head">
+    <img src="pu.png" alt="PU Logo" height="200px" >
+    <h2>PENTECOST UNIVERSITY</h2>
+    </div>
+    <table class="snd">
+        <div class="container">
+            <h1>Application Form</h1>
+            <form id="applicationForm">
+                <fieldset>
+                    <legend><b>Level Applied for </b></legend>
+
+                    <div class="flex" style="display: flex; flex-direction: column; gap: 20px;">
+                        <div class="checkbox-group">
+                            <input type="radio" id="100" name="level" value="100">
+                            <label for="100">Level 100</label>
+                            <br>
+    
+                            <input type="radio" id="200" name="level" value="200">
+                            <label for="200">Level 200</label>
+                            <br>
+    
+                            <input type="radio" id="300" name="level" value="300">
+                            <label for="300">Level 300</label>
+                            <br>
+    
+                            <input type="radio" id="400" name="level" value="400">
+                            <label for="400">Level 400</label>
+                            <br>
+                        </div>
+    
+                        <div style="width: 100%; display: flex; gap: 20px; align-items: center;">
+                            <div>
+                                <input type="radio" id="regular" name="regwedo" value="regular">
+                                <label for="regular">Regular School</label>
+                                
+                            </div>
+    
+                            <div>
+                                <input type="radio" id="weekend" name="regwedo" value="weekend">
+                                <label for="weekend">Weekend</label>
+                                
+                            </div>
+    
+                            <div>
+                                <input type="radio" id="doctorate" name="regwedo" value="doctorate">
+                                <label for="doctorate">Doctorate</label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend> <b>Student Information </b></legend>
+                    <br>
+                    <label><b>Title:</b></label>
+                    <br>
+                                <div class="checkbox-group">
+                                    <input type="radio" id="mr" name="title" value="mr">
+                                    <label for="mr">Mr</label>
+                                    <input type="radio" id="mrs" name="title" value="mrs">
+                                    <label for="mrs">Mrs</label>
+                                    <input type="radio" id="ms" name="title" value="ms">
+                                    <label for="ms">Ms</label>
+                                    <input type="radio" id="dr" name="title" value="dr">
+                                    <label for="dr">Dr</label>
+                                </div>
+                                <br>
+                    <table>
+                        <tr>                  
+
+                                <th>    <label for="surname">Surname:</label>
+                                    <input type="text" id="surname" name="surname" required>
+                                </th>
+                                <th>
+                                    <label for="firstname">First Name:</label>
+                                    <input type="text" id="firstname" name="firstname" required>
+                                </th>
+
+                                    <th>
+                                    <label for="othernames">Other Names:</label>
+                                    <input type="text" id="othernames" name="othernames">
+                                    </th>
+                                    
+                                    <label>Gender:</label>
+                                    <input type="radio" id="male" name="gender" value="male" required>
+                                    <label for="male">Male</label>
+                                    <input type="radio" id="female" name="gender" value="female" required>
+                                    <label for="female">Female</label>
+                                </tr>
+                                <br>
+                                <tr>
+                                    <td>
+                                    <label for="birthdate">Date of Birth:</label>
+                                    <input type="date" id="birthdate" name="birthdate" required>
+                                </td>
+
+                                <td>
+                                    <label for="placeofbirth">Place Of Birth:</label>
+                                    <input type="text" id="placeb" name="placeb" required>
+                                </td>
+                                    
+                                    <td>
+                                    <label for="nationality">Nationality:</label>
+                                    <input type="text" id="nationaliy" name="nationality" required>
+                                </td>
+                                    
+                                </tr>
+
+                                <tr>
+
+                                    <td>
+                                    <label for="hometown">Hometown:</label>
+                                    <input type="text" id="hometown" name="hometown" required>
+                                </td>
+
+                                <td>
+                                    <label for="region">Region Of Hometown:</label>
+                                    <input type="text" id="region" name="redion" required>
+                                </td>
+                                    <td>
+                                    <label for="religion">Religion:</label>
+                                    <input type="text" id="religion" name="religion" required>
+                                </td>
+                                <br>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <label>Marital Status:</label>
+                                    <input type="radio" id="single" name="marital" value="single">
+                                    <label for="single">Single</label>
+                                    <input type="radio" id="married" name="marital" value="married">
+                                    <label for="married">Married</label>
+                                    <input type="radio" id="divorced" name="marital" value="divorced">
+                                    <label for="divorced">Divorced</label>
+                                </td>
+                                </tr>
+
+                                
+                            
+                        </tr>
+                        
+                    </table>
+                    <br>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Educational Background</legend>
+                    <br>
+                    
+                    <label for=" schoolattended"><b>SCHOOL ATTENDED WITH DATES </b> </label>
+                    <br>
+                    <table>
+                        <tr>
+                        <th>
+                            <label for="nameofschool">Name Of School:</label>
+                            <input type="text" id="nameofschol" name="nameofschool" required>
+                        </th>
+                        <th>
+                            <label for="datesattended">Dates Attended:</label>
+                            <input type="text" id="datesattended" name="datesattended" required>
+                        </th>
+                        <th>
+                            <label for="qualification">Qualification Obtained:</label>
+                            <input type="text" id="qualification" name="qualification" required>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="text" id="school" name="school" required>
+                        </td>
+
+                        <td>
+                            <input type="text" id="school" name="school" required>
+                        </td>
+
+                        <td>
+                            <input type="text" id="school" name="school" required>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="text" id="school" name="school" required>
+                        </td>
+                        <td>
+                            <input type="text" id="school" name="school" required>
+                        </td>
+                        <td>
+                            <input type="text" id="school" name="school" required>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="text" id="school" name="school" required>
+                        </td>
+                        <td>
+                            <input type="text" id="school" name="school" required>
+                        </td>
+                        <td>
+                            <input type="text" id="school" name="school" required>
+                        </td>
+                    </tr>
+                    </tr>
+                    </table>
+                    
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>Examination Details</legend>
+                    <br>
+                    <table>
+                    <tr>
+
+                        <th>
+                            <label for="">Wassce</label>
+                        </th>
+
+                        <th>
+                            <label for="1stsitting">First Sitting:</label>
+                            <input type="text" id="1stsitting" name="1stsitting" required>
+                        </th>
+
+                        <th>
+                            <label for="2stsitting">Second Sitting:</label>
+                            <input type="text" id="2stsitting" name="2stsitting" required>
+                        </th>
+
+                        <th>
+                            <label for="3stsitting">Third Sitting:</label>
+                            <input type="text" id="3stsitting" name="3stsitting" required>
+                        </th>
+
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="idnumber">Index Number</label>
+                        </td>
+
+                        <td>
+                            <input type="text" id="idnumber" name="idnumber">
+                        </td>
+
+                        <td>
+                            <input type="text" id="idnumber" name="idnumber">
+                        </td>
+
+                        <td>
+                            <input type="text" id="idnumber" name="idnumber">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="year">Year</label>
+                        </td>
+
+                        <td>
+                            <input type="text" id="year" name="year">
+                        </td>
+
+                        <td>
+                            <input type="text" id="year" name="year">
+                        </td>
+
+                        <td>
+                            <input type="text" id="year" name="year">
+                        </td>
+                    </tr>
+
+                    <tr>
+
+                    <td>
+                        <label for="month">Month</label>
+                    </td>
+
+                    <td>
+                        <input type="text" id="month" name="month">
+                    </td>
+
+                    <td>
+                        <input type="text" id="month" name="month">
+                    </td>
+
+                    <td>
+                        <input type="text" id="month" name="month">
+                    </td>
+                </tr>
+
+                    </table>
+
+                    
+                </fieldset>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+    </table>
+</div>
+
+<script src="jsc.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+body{
+  background-color:white;
+}
+
+
+.logonav{
+  display: inline-flex;  
+}
+.menubar{
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+}
+.menubar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.menubar li {
+  margin: 0 10px;
+
+}
+
+.menubar a {
+  text-decoration: none;
+  color: #010d94;
+  padding: 10px 15px;
+  display: block;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+.menubar a:hover {
+  color: #fff;
+}
+.active, .menubar ul li:hover{
+  background-color: #6d77e3;
+  border-radius: 5px;
+}
+
+
+  .screenimage{
+   width: 100%;
+   height: 200px;
+   background-image: url(camp.webp);
+   background-size: cover;
+   background-position: center;
+   margin-top: 130px;
+   z-index: 1;
+   position: relative;
+
+  }
+  .neww{
+
+  }
+
+  .screenimage::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -2;
+    opacity: 0.4;
+  }
+  
+  .screenimage img {
+    max-width: 100%;
+    max-height: 100%; 
+    object-fit: contain}
+
+   
+    .newimage{
+      background: url(puc.webp),no-repeat;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    /* position: relative; */
+    }
+h2{
+  margin-top: 90px;
+  text-align: center;
+}
+.head{
+ 
+  display: inline-flex;
+  
+  
+}
+   
+.ttable{
+  height: 200%;
+  background-color: #fff;
+  padding: 20px;
+  border: none;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  margin: 30px;
+}
+
+
+
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+
+fieldset {
+    border: 0px solid #ddd;
+    
+}
+
+
+
+input[type="text"],
+input[type="date"],
+textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.checkbox-group label {
+    margin-right: 15px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+input[type="reset"] {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+input[type="reset"]:hover {
+  background-color: #0056b3;
+}
+
